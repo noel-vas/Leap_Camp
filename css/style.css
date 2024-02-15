@@ -293,6 +293,11 @@ button {
      color: #000;
 }
 
+.navbar {
+     height: 100px;
+     background-color: white;
+   }
+
 /* .navigation.navbar-dark .navbar-nav .active>.nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
@@ -366,7 +371,12 @@ button {
 }
 
 .logo a {
+     position: fixed;
+      top: 0;
+  left: 0;
+  z-index: 999; 
      font-size: 40px;
+     padding: 10px;
      font-weight: bold;
      text-transform: uppercase;
      color: #fff;
@@ -466,7 +476,7 @@ button {
 }
 
 .titlepage span {
-     background: #00a8e7;
+     /* background: #00a8e7; */
      display: block;
      height: 10px;
      width: 90px;
@@ -513,8 +523,9 @@ button {
 }
 
 .about .titlepage {
-     text-align: left;
+     /* text-align: left; */
      padding: 0;
+     letter-spacing: 0px;
 }
 
 .about .titlepage p {
@@ -540,14 +551,14 @@ button {
 /** mobile section **/
 
 .mobile {
-     background: url(../images/mo_bg.jpg);
+     background: url(../images/6289f32c1971ae8118019a70_blue-gradient.png);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 90px 0;
 }
 
 .mobile .titlepage {
-     text-align: right;
+     /* text-align: right; */
      padding: 0;
 }
 
@@ -587,8 +598,12 @@ button {
 /** clients section **/
 
 .clients {
-     margin-top: 40px;
-     padding-top: 60px;
+     background: url(../images/898434_OAICFA0.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 90px 0;
+     /* margin-top: 40px; */
+    
 }
 
 .clients .titlepage h2 {
@@ -647,8 +662,9 @@ button {
 /** contact section **/
 
 .contact {
+     
      background: #042431;
-     margin-top: 40px;
+     /* margin-top: 40px; */
      padding: 40px 0;
 }
 
@@ -737,6 +753,18 @@ button {
      font-weight: normal;
      border-bottom: initial;
 }
+
+.social-media-list {
+     list-style: none;
+     padding-left: 170px;
+     
+     margin: 20px;
+     display: flex; /* Make the list items display horizontally */
+   }
+   
+   .social-media-list li {
+     margin-right: 10px; /* Adjust the spacing between the social media icons */
+   }
 
 .submit {
      font-size: 17px;
