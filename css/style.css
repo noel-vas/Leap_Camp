@@ -42,7 +42,7 @@ html {
 body {
      color: #666666;
      font-size: 14px;
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Saira', sans-serif !important;
      line-height: 1.80857;
      font-weight: normal;
 }
@@ -505,21 +505,22 @@ button {
 .read_more i {
      padding-left: 10px;
 }
-
+/* 
 .read_more:hover {
      background: #00aaea;
      color: #fff !important;
      transition: ease-in all 0.5s;
-}
+} */
 
 
 /** about section **/
 
 .about {
      background: url(../images/ab_bg.png);
+     
      background-repeat: no-repeat;
      background-size: 100% 100%;
-     padding: 90px 0;
+     /* padding: 90px 0; */
 }
 
 .about .titlepage {
@@ -551,7 +552,9 @@ button {
 /** mobile section **/
 
 .mobile {
-     background: url(../images/6289f32c1971ae8118019a70_blue-gradient.png);
+     /* background: url(../images/6289f32c1971ae8118019a70_blue-gradient.png); */
+     background: #042431;
+
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 90px 0;
@@ -598,7 +601,9 @@ button {
 /** clients section **/
 
 .clients {
-     background: url(../images/898434_OAICFA0.jpg);
+     /* background: url(../images/898434_OAICFA0.jpg); */
+
+ 
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 90px 0;
@@ -606,8 +611,18 @@ button {
     
 }
 
+.divScroll {
+     overflow:scroll;
+     height:800px;
+     width:800px;
+     margin-left: -150px;
+     
+     }
+
+   
+
 .clients .titlepage h2 {
-     color: #202021;
+     color: #21202000;
 }
 
 .clients .titlepage span {
@@ -664,6 +679,7 @@ button {
 .contact {
      
      background: #042431;
+     
      /* margin-top: 40px; */
      padding: 40px 0;
 }
@@ -796,7 +812,7 @@ ul.cont li {
 }
 
 .copyright {
-     /* margin-top: 90px; */
+    
      padding: 20px 0px;
      background-color: #00aeef;
 }
