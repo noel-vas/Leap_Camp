@@ -516,7 +516,7 @@ button {
 /** about section **/
 
 .about {
-     background: url(../images/ab_bg.png);
+     background: url(../images/background.jpg);
      
      background-repeat: no-repeat;
      background-size: 100% 100%;
@@ -534,7 +534,7 @@ button {
      font-size: 17px;
      line-height: 35px;
      font-weight: 500;
-     padding: 20px 0px 35px 0px;
+     padding: 10px 0px 35px 0px;
 }
 
 .about_img figure {
@@ -613,6 +613,27 @@ div.highlight-on-hover:hover {
 
 /** clients section **/
 
+@media screen and (max-width: 1243px) {
+     .clients .divScroll {
+       width: 150%;
+       margin-left: -82px;
+       height: 100%;
+     }
+   }
+
+
+@media screen and (max-width: 769px) {
+     .clients .divScroll {
+       width: 100%;
+       margin-left: auto;
+       height: 100%;
+     }
+     .col-md-6 img {
+          padding-top: 12px ;
+     }
+   }
+   
+
 .clients {
      /* background: url(../images/898434_OAICFA0.jpg); */
      /* background:  #444; */
@@ -621,10 +642,10 @@ div.highlight-on-hover:hover {
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 90px 0;
-     /* margin-top: 40px; */
+     margin-top: -40px; 
     
 }
-
+/* 
 .divScroll {
      overflow:scroll;
      height:700px;
@@ -633,7 +654,7 @@ div.highlight-on-hover:hover {
      overflow-y: hidden;
      overflow-x: auto; 
   
-     }
+     } */
 
    
 
@@ -686,6 +707,14 @@ div.highlight-on-hover:hover {
      font-size: 17px;
      padding-bottom: 50px;
 }
+
+.project-card:hover {
+     transform: scale(1.05);
+ }
+
+
+
+ 
 
 
 /** end clients section **/
@@ -745,6 +774,44 @@ div.highlight-on-hover:hover {
      opacity: 1;
 }
 
+.chart-container {
+     margin-top: 30px;
+     background-color: peachpuff;
+     border-radius: 8px;
+     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+     padding: 20px;
+     opacity: 0;
+     transform: scale(1.2);
+     transition: opacity 1s ease, transform 1s ease;
+ }
+ 
+ canvas {
+     max-width: 100%;
+     height: auto;
+     border-radius: 8px;
+     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+ }
+
+ 
+   .contact {
+     padding: 50px 0;
+   }
+
+  
+
+   .project-list {
+     margin-top: 20px;
+   }
+
+   .chart-container {
+     margin-top: 20px;
+     opacity: 0;
+     transform: scale(1.2);
+     transition: opacity 3s ease, transform 3s ease;
+   }
+
+
+
 
 /** end contact section **/
 
@@ -768,7 +835,7 @@ div.highlight-on-hover:hover {
      font-size: 17px;
      line-height: 20px;
     
-     padding-bottom: 20px;
+     /* padding-bottom: 20px; */
 }
 
 .footer_form {
@@ -876,5 +943,12 @@ ul.cont li {
 
 .our_box figure img {
      width: 100%;
+}
+
+.whatsapp {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     cursor: pointer;
 }
 
